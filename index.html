@@ -10,13 +10,13 @@
 </head>
 <body>
 <?php 
-if(isset($_get['submit'])){
+if(isset($_GET['submit'])){
     $to ="pundiramit936@gmail.com";
-    $from =$_get['email'];
-    $first_name =$_get['fname'];
-    $last_name =$_getT['lname'];
+    $from =$_GET['email'];
+    $first_name =$_GET['fname'];
+    $last_name =$_GET['lname'];
     $subject ="Contact Form";
-    $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['textarea'];
+    $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_GET['textarea'];
    
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
@@ -89,7 +89,7 @@ if(isset($_get['submit'])){
 	<span>CONTACT ME</span>
 	<hr>
 	<div class="col-12">
-		<form action="" method="get" enctype="text/plain">
+		<form action="" method="GET" enctype="text/plain">
 			<input type="text" name="fname" size="40" placeholder="Your First Name*" required>
 			<input type="text" name="lname" size="40" placeholder="Your Last Name*" required><br>
 			<input type="text" name="email" size="40" placeholder="Your Email*" required>
