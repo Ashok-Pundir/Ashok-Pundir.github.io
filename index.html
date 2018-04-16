@@ -10,11 +10,11 @@
 </head>
 <body>
 <?php 
-if(isset($_POST['submit'])){
+if(isset($_get['submit'])){
     $to ="pundiramit936@gmail.com";
-    $from =$_POST['email'];
-    $first_name =$_POST['fname'];
-    $last_name =$_POST['lname'];
+    $from =$_get['email'];
+    $first_name =$_get['fname'];
+    $last_name =$_getT['lname'];
     $subject ="Contact Form";
     $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['textarea'];
    
@@ -89,7 +89,7 @@ if(isset($_POST['submit'])){
 	<span>CONTACT ME</span>
 	<hr>
 	<div class="col-12">
-		<form action="" method="post" enctype="text/plain">
+		<form action="" method="get" enctype="text/plain">
 			<input type="text" name="fname" size="40" placeholder="Your First Name*" required>
 			<input type="text" name="lname" size="40" placeholder="Your Last Name*" required><br>
 			<input type="text" name="email" size="40" placeholder="Your Email*" required>
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
 		<a href="https://www.instagram.com/iamashok1/" class="fa fa-instagram"></a>
 	</div>
 	<div class="col-6">
-		<p>© 2018 Ashok Pundir. All Rights Reserved</p>
+		<p>Â© 2018 Ashok Pundir. All Rights Reserved</p>
 	</div>
 </footer>
 </body>
