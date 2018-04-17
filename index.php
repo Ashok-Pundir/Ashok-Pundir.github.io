@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $subject ="Contact Form";
     $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['textarea'];
    
-    $headers = "From:" . $from;
+    $headers = "From:" . "pundiramit936@gmail.com";
     mail($to,$subject,$message,$headers);
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     }
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
 		<a href="https://www.instagram.com/iamashok1/" class="fa fa-instagram"></a>
 	</div>
 	<div class="col-6">
-		<p>© 2018 Ashok Pundir. All Rights Reserved</p>
+		<p>Â© 2018 Ashok Pundir. All Rights Reserved</p>
 	</div>
 </footer>
 </body>
