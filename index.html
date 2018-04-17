@@ -18,7 +18,7 @@ if(isset($_GET['submit'])){
     $subject ="Contact Form";
     $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_GET['textarea'];
    
-    $headers = "From:" . $from;
+    $headers = "From:" . "pundiramit936@gmail.com";
     mail($to,$subject,$message,$headers);
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     }
