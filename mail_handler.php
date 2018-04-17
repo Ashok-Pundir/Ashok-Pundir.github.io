@@ -1,15 +1,12 @@
-
- <?php
-
- $fname=$_POST['fname'];
+<?php
+$fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $email=$_POST['email'];
 $text=$_POST['textarea'];
 echo "$fname";
-         $to ="pundiramit936@gmail.com";
-         $subject = "This is subject";
-         
-         $message = "<b>$fname</b>";
+$to ="pundiramit936@gmail.com";
+$subject = "This is subject";
+$message = "<b>$fname</b>";
          
          $header = "From:$email \r\n";
          $header .= "MIME-Version: 1.0\r\n";
