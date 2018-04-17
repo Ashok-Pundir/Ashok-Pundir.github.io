@@ -6,7 +6,7 @@ $d=$_POST['phone'];
 $e=$_POST['msg'];
 
     $to ="pundiramit936@gmail.com";
-	$subject ="Contact Form $a";
+	$subject ="Contact Form";
     $message ='<table width="707" height="90" border="0">
 	<tr>
 		<td>'.$a.'</td>
@@ -27,7 +27,7 @@ $e=$_POST['msg'];
    
     $headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .="Content-type:text/html;charset=iso-8859-1" . "\r\n";
-	$headers .='From:<web@halexo.in>' . "\r\n";
+	$headers .='From: <web@halexo.in>' . "\r\n";
 	if(mail($to, $subject, $message, $headers))
 	{
 		echo"<h1>sent successfully</h1>";
