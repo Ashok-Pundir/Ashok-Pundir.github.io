@@ -1,14 +1,39 @@
 <?php 
-if(isset($_GET['submit'])){
+$a=$_POST['fname'];
+$b=$_POST['lname'];
+$c=$_POST['email'];
+$d=$_POST['phone'];
+$e=$_POST['msg'];
+
     $to ="pundiramit936@gmail.com";
-    $from =$_GET['email'];
-    $first_name =$_GET['fname'];
-    $last_name =$_GET['lname'];
-    $subject ="Contact Form";
-    $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_GET['textarea'];
+	$subject ="Contact Form $a";
+    $message ='<table width="707" height="90" border="0">
+	<tr>
+		<td>'.$a.'</td>
+	</tr>
+	<tr>
+		<td>'.$b.'</td>
+	</tr>
+	<tr>
+		<td>'.$c.'</td>
+	</tr>
+	<tr>
+		<td>'.$d.'</td>
+	</tr>
+	<tr>
+		<td>'.$e.'</td>
+	</tr>
+	</table>';
    
-    $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    }
+    $headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .="Content-type:text/html;charset=iso-8859-1" . "\r\n";
+	$headers .='From:<web@ashokpundir.com>' . "\r\n";
+	if(mail($to, $subject, $message, $headers))
+	{
+		echo"<h1>sent successfully</h1>";
+	}
+	else
+	{
+		echo"error";
+	}
 ?>
