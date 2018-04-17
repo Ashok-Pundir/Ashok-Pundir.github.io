@@ -1,4 +1,4 @@
-<?php 
+<!--?php 
 $a=$_POST['fname'];
 $b=$_POST['lname'];
 $c=$_POST['email'];
@@ -36,4 +36,7 @@ $e=$_POST['msg'];
 	{
 		echo"error";
 	}
+?-->
+<?php 
+echo"hello";
 ?>
