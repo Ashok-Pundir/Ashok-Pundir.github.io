@@ -16,7 +16,7 @@ if(isset($_GET['submit'])){
     $first_name =$_GET['fname'];
     $last_name =$_GET['lname'];
     $subject ="Contact Form";
-    $message =$first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_GET['textarea'];
+    $message =$fname . " " . $lname . " wrote the following:" . "\n\n" . $_GET['textarea'];
    
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
@@ -105,7 +105,7 @@ if(isset($_GET['submit'])){
 		<a href="https://www.instagram.com/iamashok1/" class="fa fa-instagram"></a>
 	</div>
 	<div class="col-6">
-		<p>© 2018 Ashok Pundir. All Rights Reserved</p>
+		<p>Â© 2018 Ashok Pundir. All Rights Reserved</p>
 	</div>
 </footer>
 </body>
