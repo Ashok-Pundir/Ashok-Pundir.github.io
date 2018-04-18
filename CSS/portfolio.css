@@ -74,7 +74,12 @@
 	padding-top:70px;
 	
 }
-
+.img-text-heading-first{
+	font-size:180px;
+}
+.img-text-heading-second{
+	font-size:100px;
+}
 .img-text-subheading{
 	font-weight:bold;
 	font-size:42px;
@@ -129,7 +134,7 @@ hr{
 	font-size:60px;
 	text-align:center;
 }
-input[type=text]{
+/*input[type=text]{
 	padding:12px 20px;
 }
 textarea{
@@ -158,7 +163,7 @@ input[type=submit]{
 input[type=submit]:hover{
 	background-color:skyblue;
 	color:white;
-}
+}*/
 footer{
 	width:100%;
 	height:200px;
@@ -198,14 +203,34 @@ footer p{
     [class*="col-"] {
         width: 100%;
     }
-}
-@media screen and(max-width:700px){
-	.img-text-subheading b{
-		font-size:10px;
+}@media only screen and (max-width: 700px){
+	.img-text-heading-first{
+		font-size:100px;
 	}
 }
-@media screen and(max-width:700px){
+@media only screen and (max-width: 700px){
+	.img-text-heading-second{
+		font-size:60px;
+	}
+}
+@media only screen and (max-width: 700px){
+	.img-text-subheading{
+		font-size:35px;
+	}
+}
+@media only screen and (max-width: 700px){
+	.img-text-subheading b{
+		font-size:50px;
+	}
+}
+@media only screen and (max-width: 700px){
+	footer p{
+		margin-top:0;
+		font-size:15px;
+	}
+}
+/*@media screen and(max-width:700px){
 	input[type=submit]{
 		width:100%;
 	}
-}
+}*/
