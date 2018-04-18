@@ -80,6 +80,12 @@
 .img-text-heading-second{
 	font-size:100px;
 }
+.img-hr{
+	border:2px solid black;
+	padding:0;
+	margin-left:0;
+	width:90%;
+}
 .img-text-subheading{
 	font-weight:bold;
 	font-size:42px;
