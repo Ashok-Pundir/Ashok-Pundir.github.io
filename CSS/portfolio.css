@@ -108,7 +108,7 @@ hr{
 
 .aboutgraphics{
 	font-size:20px;
-	margin-top:-8px;
+	margin-top:-8px;	
 }
 .graphics{
 	width:70%;
@@ -203,7 +203,16 @@ footer p{
     [class*="col-"] {
         width: 100%;
     }
-}@media only screen and (max-width: 700px){
+
+}
+@media only screen and (max-width: 700px){
+	.aboutgraphics {
+		margin-top:10px;
+		margin-left:25px;
+		font-size:15px;
+	}
+}
+@media only screen and (max-width: 700px){
 	.img-text-heading-first{
 		font-size:100px;
 	}
